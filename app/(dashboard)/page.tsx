@@ -18,7 +18,7 @@ const DashboardPage = ({ searchParams }: DashboardPageProps) => {
 
   const searchParamss = useSearchParams();
 
-  console.log({ searchParams, searchParamss });
+  console.log({ searchParams, searchParamss: searchParamss.get('favorites') });
 
   return (
     <div className="flex-1 h-[calc(100%-80px)] p-6">
