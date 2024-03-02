@@ -10,7 +10,6 @@ import { Layer, Color } from '@/types/canvas';
 
 const client = createClient({
   authEndpoint: '/api/liveblocks-auth',
-  // publicApiKey: 'pk_dev_mvhXHTHxNJalFXFnOMdZNQtaeS5Mltke5BzXY8fGrLh-VAoiv7vqAnh8clIehQiU',
   throttle: 16,
 });
 
