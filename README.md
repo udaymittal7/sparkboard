@@ -1,3 +1,16 @@
-// Layout file components doesn't re-render
+Real-Time Collaborative board With Nextjs, React, Tailwind (2024)
 
-// foreignObject -> to render inside an svg element
+Features:
+
+- 🛠️ Whiteboard from scratch
+- 🧰 Toolbar with Text, Shapes, Sticky Notes & Pencil
+- 🪄 Layering functionality
+- 🎨 Coloring system
+- ↩️ Undo & Redo functionality
+- ⌨️ Keyboard shortcuts
+- 🤝 Real-time collaboration 
+- 💾 Real-time database 
+- 🔐 Auth, organizations and invites 
+- ⭐️ Favoriting functionality
+- 🌐 Next.js 14 framework
+- 💅 TailwindCSS & ShadcnUI styling
