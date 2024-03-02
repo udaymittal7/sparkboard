@@ -6,26 +6,22 @@ import { EmptyOrg } from './_components/empty-org';
 import { BoardList } from './_components/board-list';
 import { useSearchParams } from 'next/navigation';
 
-interface DashboardPageProps {
-  searchParams: {
-    search?: string;
-    favorites?: string;
-  };
-}
-
-const DashboardPage = ({ searchParams }: DashboardPageProps) => {
+const DashboardPage = () => {
   const { organization } = useOrganization();
 
-  const searchParamss = useSearchParams();
+  const searchParams = useSearchParams();
 
-  console.log({ searchParams, searchParamss: searchParamss.get('favorites') });
+  const query = {
+    search: searchParams.get('search') ?? undefined,
+    favorites: searchParams.get('favorites') ?? undefined,
+  };
 
   return (
     <div className="flex-1 h-[calc(100%-80px)] p-6">
       {!organization ? (
         <EmptyOrg />
       ) : (
-        <BoardList orgId={organization.id} query={searchParams} />
+        <BoardList orgId={organization.id} query={query} />
       )}
     </div>
   );

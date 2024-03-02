@@ -24,8 +24,6 @@ export const BoardList = ({ orgId, query }: BoardListProps) => {
     ...query,
   });
 
-  console.log(query, data);
-
   /* 
       We can use this check as convex will return null if the query result is empty
       and undefined if the query is still loading
