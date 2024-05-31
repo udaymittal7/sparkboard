@@ -1,4 +1,4 @@
-Real-Time Collaborative board With Nextjs, React, Tailwind (2024)
+Real-Time Collaborative board With Nextjs, React, Tailwind
 
 Features:
 
